@@ -9,19 +9,10 @@ import Filter from './components/Filter';
 const LS_CONTACTS = 'pb_contacts';
 
 export default function App() {
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState(
+    JSON.parse(localStorage.getItem(LS_CONTACTS)) ?? []
+  );
   const [filter, setFilter] = useState('');
-
-  useEffect(() => {
-    try {
-      const savedContacts = JSON.parse(localStorage.getItem(LS_CONTACTS));
-      if (savedContacts) {
-        setContacts(prev => [...prev, ...savedContacts]);
-      }
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
 
   useEffect(() => {
     const contactsJSON = JSON.stringify(contacts);
