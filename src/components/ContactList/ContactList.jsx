@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import { Item, Text, Icon, Number, Btn } from './ContactList.styled';
 import { BsFillPersonFill, BsFillPersonXFill } from 'react-icons/bs';
 
-// BsFillPersonFill, BsFillPersonPlusFill, BsFillPersonXFill
-
 const ContactList = ({ contacts, deleteContact }) => {
   return (
     <ul>

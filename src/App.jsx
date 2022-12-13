@@ -16,7 +16,7 @@ export default function App() {
     try {
       const savedContacts = JSON.parse(localStorage.getItem(LS_CONTACTS));
       if (savedContacts) {
-        setContacts(savedContacts);
+        setContacts(prev => [...prev, ...savedContacts]);
       }
     } catch (error) {
       console.error(error);
