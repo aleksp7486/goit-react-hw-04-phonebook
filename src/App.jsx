@@ -10,7 +10,7 @@ const LS_CONTACTS = 'pb_contacts';
 
 export default function App() {
   const [contacts, setContacts] = useState(
-    JSON.parse(localStorage.getItem(LS_CONTACTS)) ?? []
+    () => JSON.parse(localStorage.getItem(LS_CONTACTS)) ?? []
   );
   const [filter, setFilter] = useState('');
 
