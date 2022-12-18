@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/goit-react-hw-04-phonebook/static/css/main.e0a175f9.css",
-    "main.js": "/goit-react-hw-04-phonebook/static/js/main.54d1b8b4.js",
+    "main.js": "/goit-react-hw-04-phonebook/static/js/main.157e047d.js",
     "static/media/roboto-v30-latin-700.woff": "/goit-react-hw-04-phonebook/static/media/roboto-v30-latin-700.77ecb942e56f9b036426.woff",
     "static/media/roboto-v30-latin-regular.woff": "/goit-react-hw-04-phonebook/static/media/roboto-v30-latin-regular.f1e2a76794cb86b2aa8e.woff",
     "static/media/roboto-v30-latin-700.woff2": "/goit-react-hw-04-phonebook/static/media/roboto-v30-latin-700.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-v30-latin-regular.woff2": "/goit-react-hw-04-phonebook/static/media/roboto-v30-latin-regular.b009a76ad6afe4ebd301.woff2",
     "index.html": "/goit-react-hw-04-phonebook/index.html",
     "main.e0a175f9.css.map": "/goit-react-hw-04-phonebook/static/css/main.e0a175f9.css.map",
-    "main.54d1b8b4.js.map": "/goit-react-hw-04-phonebook/static/js/main.54d1b8b4.js.map"
+    "main.157e047d.js.map": "/goit-react-hw-04-phonebook/static/js/main.157e047d.js.map"
   },
   "entrypoints": [
     "static/css/main.e0a175f9.css",
-    "static/js/main.54d1b8b4.js"
+    "static/js/main.157e047d.js"
   ]
 }
