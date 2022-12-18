@@ -5,6 +5,7 @@ import Section from './components/Section';
 import ContactForm from './components/ContactForm';
 import ContactList from './components/ContactList';
 import Filter from './components/Filter';
+import { useMemo } from 'react';
 
 const LS_CONTACTS = 'pb_contacts';
 
@@ -41,19 +42,18 @@ export default function App() {
     setFilter(e.target.value);
   };
 
-  const getFilteredContacts = () => {
-    const normalizeFilter = filter.toLowerCase();
-    return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(normalizeFilter)
-    );
-  };
-
   const deleteContact = e => {
     const id = e.currentTarget.closest('li').getAttribute('id');
     setContacts(contacts.filter(contact => contact.id !== id));
   };
 
-  const filteredContacts = getFilteredContacts();
+  const filteredContacts = useMemo(
+    () =>
+      contacts.filter(contact =>
+        contact.name.toLowerCase().includes(filter.toLowerCase())
+      ),
+    [contacts, filter]
+  );
 
   return (
     <Box pt="120px">
